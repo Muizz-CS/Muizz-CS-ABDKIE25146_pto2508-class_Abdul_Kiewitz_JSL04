@@ -21,7 +21,6 @@
   </head>
 
   <body>
-    <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
     <nav class="side-bar" id="side-bar-div">
       <div id="side-logo-div">
         <img id="logo" src="./assets/logo-light.svg" alt="logo-light" />
@@ -33,60 +32,38 @@
       </div>
     </nav>
 
-    <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
     <div id="layout">
       <header id="header" class="sticky-header">
         <div class="header-name-div">
-          <img
-            src="./assets/favicon.svg"
-            alt="logo-mobile"
-            class="logo-mobile"
-          />
-          <h2 class="header-board-name" id="header-board-name">
-            Launch Career
-          </h2>
+          <img src="./assets/favicon.svg" alt="logo-mobile" class="logo-mobile" />
+          <h2 class="header-board-name" id="header-board-name">Launch Career</h2>
         </div>
       </header>
 
       <div class="container">
         <main class="card-column-main">
-          <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
           <div class="column-div" data-status="todo">
-            <div id="todo-head-div" class="column-head-div">
+            <div class="column-head-div">
               <span class="dot" id="todo-dot"></span>
-              <h4 id="toDoText" class="columnHeader">TODO (4)</h4>
+              <h4 class="columnHeader" id="toDoText">TODO (0)</h4>
             </div>
-            <!-- Tasks container for TODO -->
-            <div class="tasks-container">
-              <div class="task-div">Launch Epic Career 🚀</div>
-              <div class="task-div">Conquer React⚛️</div>
-              <div class="task-div">Understand Databases⚙️</div>
-              <div class="task-div">Crush Frameworks🖼️</div>
-            </div>
+            <div class="tasks-container"></div>
           </div>
-          <!-- DOING Column -->
+
           <div class="column-div" data-status="doing">
-            <div id="doing-head-div" class="column-head-div">
+            <div class="column-head-div">
               <span class="dot" id="doing-dot"></span>
-              <h4 id="doingText" class="columnHeader">DOING (2)</h4>
+              <h4 class="columnHeader" id="doingText">DOING (0)</h4>
             </div>
-            <!-- Tasks container for DOING -->
-            <div class="tasks-container">
-              <div class="task-div">Master JavaScript 💛</div>
-              <div class="task-div">Never Give Up 🏆</div>
-            </div>
+            <div class="tasks-container"></div>
           </div>
-          <!-- DONE Column -->
+
           <div class="column-div" data-status="done">
-            <div id="done-head-div" class="column-head-div">
+            <div class="column-head-div">
               <span class="dot" id="done-dot"></span>
-              <h4 id="doneText" class="columnHeader">DONE (2)</h4>
+              <h4 class="columnHeader" id="doneText">DONE (0)</h4>
             </div>
-            <!-- Tasks container for DONE -->
-            <div class="tasks-container">
-              <div class="task-div">Explore ES6 Features 🚀</div>
-              <div class="task-div">Have fun 🥳</div>
-            </div>
+            <div class="tasks-container"></div>
           </div>
         </main>
       </div>
